@@ -1,32 +1,15 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "server.js", "use": "@vercel/node" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "server.js" }
-  ],
-  "env": {
-    "CLERK_WEBHOOK_SECRET_KEY": "@CLERK_WEBHOOK_SECRET_KEY",
-    "MONGODB_URI": "@MONGODB_URI",
-    "SEO_API_SECRET_KEY": "@SEO_API_SECRET_KEY",
-    "SEO_API_PUBLIC_KEY": "@SEO_API_PUBLIC_KEY",
-    "SEO_SALT": "@SEO_SALT",
-    "NOVITA_API_KEY": "@NOVITA_API_KEY",
-    "PORT": "@PORT",
-    "CLERK_PUBLISHABLE_KEY": "@CLERK_PUBLISHABLE_KEY",
-    "CLERK_SECRET_KEY": "@CLERK_SECRET_KEY",
-    "OPENROUTER_API_KEY": "@OPENROUTER_API_KEY",
-    "FRONTEND_URL": "@FRONTEND_URL",
-    "NEXT_PUBLIC_BASE_URL": "@NEXT_PUBLIC_BASE_URL",
-    "OPENAI_API_KEY": "@OPENAI_API_KEY",
-    "STRIPE_SECRET_KEY": "@STRIPE_SECRET_KEY",
-    "STRIPE_WEBHOOK_SECRET": "@STRIPE_WEBHOOK_SECRET"
-  },
-  "functions": {
-    "server.js": {
-      "memory": 1024,
-      "maxDuration": 10
-    }
-  }
+    "version": 2,
+    "builds": [
+        {
+            "src": "/server.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/server.js"
+        }
+    ]
 }
