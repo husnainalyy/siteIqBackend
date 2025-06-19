@@ -1,5 +1,5 @@
 
-import Website from "../models/Website.js";
+import Website from "../models/website.js";
 import SeoReport from "../models/seoModel.js";
 import { callOpenAI } from "../utils/openaiClient.js";
 // your two helpers

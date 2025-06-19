@@ -1,7 +1,7 @@
 import axios from "axios";
 import SeoReport from "../models/seoModel.js";
 import SeoRecommendation from "../models/SeoRecommendation.js";
-import Website from "../models/Website.js"; //new
+import Website from "../models/website.js"; //new
 
 
 const generateSEORecommendations = async (req, res) => {
